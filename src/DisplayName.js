@@ -15,8 +15,8 @@ const DisplayName = () => {
     <>
     <h1>Full Name Display</h1> 
     <form onSubmit={handleSubmit}> 
-        First Name: <input type='text' value={firstName} onChange={(e)=>setFirstName(e.target.value)}/> <br/>
-        Last Name: <input type='text' value={lastName} onChange={(e)=>setLastName(e.target.value)}/> <br/>
+        First Name: <input type='text' value={firstName} onChange={(e)=>setFirstName(e.target.value)} required/> <br/>
+        Last Name: <input type='text' value={lastName} onChange={(e)=>setLastName(e.target.value)} required/> <br/>
         <button type='submit'>Submit</button>
     </form>
 {
